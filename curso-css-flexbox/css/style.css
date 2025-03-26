@@ -65,8 +65,9 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px 0 10px;
+    padding: 30px;
     justify-items: center;
+    color: crimson;
 }
 
 .receitas {
@@ -121,7 +122,7 @@
     margin: 0 auto;
     padding: 60px 10px;
     flex-wrap: wrap;
-
+    flex-direction: column;
 }
 
 .receitasI p {
@@ -146,5 +147,85 @@
     display: flex;
 }
 
+.cookbook {
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
 
+.cookbookI {
+    flex: 1;
+    border: 4px solid tomato;
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px;
+}
 
+.cookbookI h2 {
+    font-size: 3em;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cookbookI span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.cookbookI sup {
+    font-size: 1.5rem;
+}
+
+.cookbookI ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.cookbookI li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cookbookI li::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: hsl(19, 100%, 59%);
+    border-radius: 50%;
+}
+
+.cookbookI a {
+    max-width: 320px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .cookbook {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
